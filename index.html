@@ -1,6 +1,112 @@
 <!DOCTYPE html>
-<html>
-<body>
-    <h1>Hello World from GitHub Pages! Hello?</h1>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Puzzle Box</title>
+<meta name="description" content="A tiny arcade of hand-made puzzles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%A7%A9%3C/text%3E%3C/svg%3E">
+</head>
+<body class="home">
+
+<header class="hero">
+  <h1>The Puzzle Box 🧩</h1>
+  <p>A tiny arcade of hand-made puzzles — pick one and play.</p>
+</header>
+
+<main class="cards">
+
+  <a class="card" href="sliding.html" style="--card-accent:#e8618c">
+    <span class="tag">Classic 15-puzzle</span>
+    <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true">
+      <rect x="1"  y="1"  width="25" height="25" rx="5" fill="#ec7ba3"/>
+      <rect x="28" y="1"  width="25" height="25" rx="5" fill="#f9c6d8"/>
+      <rect x="55" y="1"  width="25" height="25" rx="5" fill="#e8618c"/>
+      <rect x="82" y="1"  width="25" height="25" rx="5" fill="#f2a1bd"/>
+      <rect x="1"  y="28" width="25" height="25" rx="5" fill="#f2a1bd"/>
+      <rect x="28" y="28" width="25" height="25" rx="5" fill="#ec7ba3"/>
+      <rect x="55" y="28" width="25" height="25" rx="5" fill="#f9c6d8"/>
+      <rect x="82" y="28" width="25" height="25" rx="5" fill="#e8618c"/>
+      <rect x="1"  y="55" width="25" height="25" rx="5" fill="#e8618c"/>
+      <rect x="28" y="55" width="25" height="25" rx="5" fill="#f2a1bd"/>
+      <rect x="55" y="55" width="25" height="25" rx="5" fill="#ec7ba3"/>
+      <rect x="82" y="55" width="25" height="25" rx="5" fill="#f9c6d8"/>
+      <rect x="1"  y="82" width="25" height="25" rx="5" fill="#f9c6d8"/>
+      <rect x="28" y="82" width="25" height="25" rx="5" fill="#e8618c"/>
+      <rect x="55" y="82" width="25" height="25" rx="5" fill="#f2a1bd"/>
+    </svg>
+    <h2>The Sliding Memory</h2>
+    <p>The picture got scrambled! Slide tiles into the empty space until the photo comes back together.</p>
+    <span class="play">Play →</span>
+  </a>
+
+  <a class="card" href="lightsout.html" style="--card-accent:#f0a132">
+    <span class="tag">Lights out</span>
+    <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true">
+      <rect x="2"  y="2"  width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="23" y="2"  width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="44" y="2"  width="19" height="19" rx="4" fill="#34325c"/>
+      <rect x="65" y="2"  width="19" height="19" rx="4" fill="#34325c"/>
+      <rect x="86" y="2"  width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="2"  y="23" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="23" y="23" width="19" height="19" rx="4" fill="#34325c"/>
+      <rect x="44" y="23" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="65" y="23" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="86" y="23" width="19" height="19" rx="4" fill="#34325c"/>
+      <rect x="2"  y="44" width="19" height="19" rx="4" fill="#34325c"/>
+      <rect x="23" y="44" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="44" y="44" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="65" y="44" width="19" height="19" rx="4" fill="#34325c"/>
+      <rect x="86" y="44" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="2"  y="65" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="23" y="65" width="19" height="19" rx="4" fill="#34325c"/>
+      <rect x="44" y="65" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="65" y="65" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="86" y="65" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="2"  y="86" width="19" height="19" rx="4" fill="#34325c"/>
+      <rect x="23" y="86" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="44" y="86" width="19" height="19" rx="4" fill="#34325c"/>
+      <rect x="65" y="86" width="19" height="19" rx="4" fill="#ffc25e"/>
+      <rect x="86" y="86" width="19" height="19" rx="4" fill="#ffc25e"/>
+    </svg>
+    <h2>Timezone Sync</h2>
+    <p>Every switch flips its neighbours too. Turn night into day across all 25 timezones at once.</p>
+    <span class="play">Play →</span>
+  </a>
+
+  <a class="card" href="connection.html" style="--card-accent:#3fa7d6">
+    <span class="tag">Path drawing</span>
+    <svg width="110" height="110" viewBox="0 0 110 110" aria-hidden="true">
+      <g fill="#edeaf3">
+        <rect x="1"  y="1"  width="16" height="16" rx="4"/><rect x="19" y="1"  width="16" height="16" rx="4"/><rect x="37" y="1"  width="16" height="16" rx="4"/><rect x="73" y="1"  width="16" height="16" rx="4"/>
+        <rect x="1"  y="19" width="16" height="16" rx="4"/><rect x="19" y="19" width="16" height="16" rx="4"/><rect x="55" y="19" width="16" height="16" rx="4"/><rect x="91" y="19" width="16" height="16" rx="4"/>
+        <rect x="1"  y="37" width="16" height="16" rx="4"/><rect x="19" y="37" width="16" height="16" rx="4"/><rect x="37" y="37" width="16" height="16" rx="4"/><rect x="55" y="37" width="16" height="16" rx="4"/><rect x="91" y="37" width="16" height="16" rx="4"/>
+        <rect x="1"  y="55" width="16" height="16" rx="4"/><rect x="37" y="55" width="16" height="16" rx="4"/><rect x="55" y="55" width="16" height="16" rx="4"/><rect x="73" y="55" width="16" height="16" rx="4"/>
+        <rect x="19" y="73" width="16" height="16" rx="4"/><rect x="37" y="73" width="16" height="16" rx="4"/><rect x="55" y="73" width="16" height="16" rx="4"/><rect x="73" y="73" width="16" height="16" rx="4"/><rect x="91" y="73" width="16" height="16" rx="4"/>
+        <rect x="1"  y="91" width="16" height="16" rx="4"/><rect x="19" y="91" width="16" height="16" rx="4"/><rect x="55" y="91" width="16" height="16" rx="4"/><rect x="73" y="91" width="16" height="16" rx="4"/><rect x="91" y="91" width="16" height="16" rx="4"/>
+      </g>
+      <g fill="#4a4666">
+        <rect x="55" y="1"  width="16" height="16" rx="4"/><rect x="91" y="1"  width="16" height="16" rx="4"/>
+        <rect x="37" y="19" width="16" height="16" rx="4"/><rect x="73" y="19" width="16" height="16" rx="4"/>
+        <rect x="73" y="37" width="16" height="16" rx="4"/>
+        <rect x="19" y="55" width="16" height="16" rx="4"/><rect x="91" y="55" width="16" height="16" rx="4"/>
+        <rect x="1"  y="73" width="16" height="16" rx="4"/>
+        <rect x="37" y="91" width="16" height="16" rx="4"/>
+      </g>
+      <polyline points="9,9 27,9 27,27 27,45 45,45 63,45 63,63 63,81 81,81 81,99 99,99"
+                fill="none" stroke="#3fa7d6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h2>Connection Grid</h2>
+    <p>Draw one unbroken line from 🏠 to 🌟 around the blockers — no branches, no gaps allowed.</p>
+    <span class="play">Play →</span>
+  </a>
+
+</main>
+
+<footer class="site-foot">made with ♥ · new puzzles appear from time to time</footer>
+
 </body>
 </html>

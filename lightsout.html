@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timezone Sync · The Puzzle Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%A7%A9%3C/text%3E%3C/svg%3E">
+</head>
+<body class="game-lights">
+<div class="game-wrap">
+
+  <div class="top-line"><a class="back" href="index.html">← All puzzles</a></div>
+
+  <h1 class="game-title">Timezone Sync</h1>
+  <p class="game-sub">
+    It's daylight somewhere — but not everywhere. Flipping a timezone also flips
+    the four next to it. Make it ☀️ daytime everywhere at once.
+  </p>
+
+  <div id="winBanner" class="win-banner">
+    <div class="big">All timezones in sync! ☀️</div>
+    <div class="sub" id="winSub"></div>
+  </div>
+
+  <div class="statbar">
+    <span class="chip">Moves <b id="moves">0</b></span>
+  </div>
+
+  <div class="board-wrap">
+    <div id="board" class="lights-board" aria-label="lights out board"></div>
+  </div>
+
+  <div class="controls">
+    <select id="diffSel" aria-label="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+    <button id="hintBtn" type="button">Hint</button>
+    <button id="restartBtn" type="button">Restart</button>
+    <button id="newBtn" class="primary" type="button">New puzzle</button>
+  </div>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/lightsout.js"></script>
+</body>
+</html>

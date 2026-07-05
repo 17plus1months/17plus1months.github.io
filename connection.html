@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connection Grid · The Puzzle Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%A7%A9%3C/text%3E%3C/svg%3E">
+</head>
+<body class="game-connect">
+<div class="game-wrap">
+
+  <div class="top-line"><a class="back" href="index.html">← All puzzles</a></div>
+
+  <h1 class="game-title">Connection Grid</h1>
+  <p class="game-sub">
+    Draw a single unbroken line from 🏠 home to 🌟 the star.
+    Click or drag across open cells — no branches, no gaps, and the dark blockers are off-limits.
+  </p>
+
+  <div id="winBanner" class="win-banner">
+    <div class="big">Connected! 🎉</div>
+    <div class="sub" id="winSub"></div>
+  </div>
+
+  <div class="statbar">
+    <span class="chip">Path <b id="pathLen">2</b> cells</span>
+    <span class="chip" id="status">Draw a line from 🏠 to 🌟</span>
+  </div>
+
+  <div class="board-wrap">
+    <div id="board" class="connect-board" aria-label="connection grid board"></div>
+  </div>
+
+  <div class="controls">
+    <select id="diffSel" aria-label="difficulty">
+      <option value="easy">Easy · 6 × 6</option>
+      <option value="medium" selected>Medium · 8 × 8</option>
+      <option value="hard">Hard · 10 × 10</option>
+    </select>
+    <button id="clearBtn" type="button">Clear</button>
+    <button id="newBtn" class="primary" type="button">New puzzle</button>
+  </div>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/connection.js"></script>
+</body>
+</html>
