@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enclose the Horse · The Puzzle Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="game-horse">
+<div class="game-wrap">
+
+  <div class="top-line"><a class="back" href="index.html">← All puzzles</a></div>
+
+  <h1 class="game-title">Enclose the Horse</h1>
+  <p class="game-sub">
+    In the interest of not infringing upon the IP of the hit game enclose.horse, this is a somewhat bootleg version of the same game. 
+    The horse moves after each fence placement, your goal is to <strong>trap</strong> (not enclose (tm)) it in as few moves as possible.
+  </p>
+
+  <div id="winBanner" class="win-banner">
+    <div class="big" id="bannerBig">Horse enclosed! 🎉</div>
+    <div class="sub" id="bannerSub"></div>
+  </div>
+
+  <div class="statbar">
+    <span class="chip">Fences <b id="fences">0</b></span>
+  </div>
+
+  <div class="board-wrap">
+    <div id="board" class="horse-board" aria-label="meadow"></div>
+  </div>
+
+  <div class="controls">
+    <select id="diffSel" aria-label="difficulty">
+      <option value="easy">Easy · big head start</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard · small head start</option>
+    </select>
+    <button id="newBtn" class="primary" type="button">New round</button>
+  </div>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/horse.js"></script>
+</body>
+</html>

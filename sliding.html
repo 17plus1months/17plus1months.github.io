@@ -16,12 +16,12 @@
 
   <h1 class="game-title">The Sliding Memory</h1>
   <p class="game-sub">
-    Slide tiles into the empty space until the picture is whole again.
-    Tap any tile in the gap's row or column to slide the whole run — arrow keys work too.
+    Reconstruct some of my favorite moments with you by sliding tiles until the picture matches the goal.
+    Either click a tile or use the arrow keys to rearrange the tiles. 
   </p>
 
   <div id="winBanner" class="win-banner">
-    <div class="big">Picture restored! 🎉</div>
+    <div class="big">Picture restored!</div>
     <div class="sub" id="winSub"></div>
   </div>
 
@@ -50,8 +50,10 @@
 
 </div>
 
-<!-- To use your own photo: drop it in images/ and change IMAGE_SRC at the top of js/sliding.js -->
+<!-- Puzzle photos come from the shared library (PHOTOS in js/gallery.js).
+     Drop new pictures into images/gallery/ and add them to that list. -->
 <script src="js/common.js"></script>
+<script src="js/gallery.js"></script>
 <script src="js/sliding.js"></script>
 </body>
 </html>

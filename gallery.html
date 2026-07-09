@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery · The Puzzle Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="game-gallery">
+<div class="game-wrap">
+
+  <div class="top-line"><a class="back" href="index.html">← All puzzles</a></div>
+
+  <h1 class="game-title">Gallery</h1>
+
+  <!-- To add your own photos: drop files into images/gallery/ and edit the PHOTOS list at the top of js/gallery.js -->
+  <div class="slideshow" id="slideshow">
+    <div class="ss-stage">
+      <button class="ss-arrow" id="ssPrev" type="button" aria-label="previous photo">‹</button>
+      <div class="ss-card">
+        <figure>
+          <img id="ssImg" alt="">
+          <div class="ss-progress" aria-hidden="true"><i id="ssBar"></i></div>
+          <figcaption>
+            <b id="ssTitle"></b>
+            <span id="ssNote"></span>
+          </figcaption>
+        </figure>
+      </div>
+      <button class="ss-arrow" id="ssNext" type="button" aria-label="next photo">›</button>
+    </div>
+    <div class="ss-bottom">
+      <div class="ss-dots" id="ssDots"></div>
+      <button class="ss-pause" id="ssPause" type="button" aria-pressed="false">⏸ Pause</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipes · The Puzzle Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="game-pipes">
+<div class="game-wrap">
+
+  <div class="top-line"><a class="back" href="index.html">← All puzzles</a></div>
+
+  <h1 class="game-title">Pipes</h1>
+  <p class="game-sub">
+    This has all the usual controls, I'd imagine I don't need to explain how to play. I never ended up being able to consistently beat you on this, so I've decided that I'll settle for 
+    making the puzzles instead. 
+  </p>
+
+  <div id="winBanner" class="win-banner">
+    <div class="big">Everything's flowing! 💧</div>
+    <div class="sub" id="winSub"></div>
+  </div>
+
+  <div class="statbar">
+    <span class="chip">Moves <b id="moves">0</b></span>
+    <span class="chip">Time <b id="time">0:00</b></span>
+  </div>
+
+  <div class="board-wrap">
+    <div id="board" class="pipes-board" aria-label="pipes board"></div>
+  </div>
+
+  <div class="controls">
+    <select id="sizeSel" aria-label="board size">
+      <option value="5">5 × 5 · easy</option>
+      <option value="7" selected>7 × 7 · classic</option>
+      <option value="9">9 × 9 · hard</option>
+      <option value="11">11 × 11 · expert</option>
+      <option value="20">20 × 20 · marathon</option>
+    </select>
+    <button id="newBtn" class="primary" type="button">New puzzle</button>
+  </div>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/pipes.js"></script>
+</body>
+</html>

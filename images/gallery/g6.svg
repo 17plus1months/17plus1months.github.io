@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="deep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10102e"/><stop offset="1" stop-color="#2c2a5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#deep)"/>
+  <g fill="#ffffff">
+    <circle cx="90" cy="120" r="3" opacity="0.9"/><circle cx="210" cy="70" r="2" opacity="0.6"/>
+    <circle cx="330" cy="160" r="2.5" opacity="0.8"/><circle cx="470" cy="90" r="2" opacity="0.55"/>
+    <circle cx="700" cy="140" r="3" opacity="0.85"/><circle cx="620" cy="330" r="2" opacity="0.6"/>
+    <circle cx="120" cy="330" r="2" opacity="0.5"/><circle cx="80" cy="540" r="2.5" opacity="0.7"/>
+    <circle cx="300" cy="620" r="2" opacity="0.5"/><circle cx="520" cy="700" r="2.5" opacity="0.7"/>
+    <circle cx="700" cy="560" r="2" opacity="0.55"/><circle cx="420" cy="420" r="2" opacity="0.6"/>
+    <circle cx="240" cy="470" r="2" opacity="0.5"/><circle cx="660" cy="690" r="2" opacity="0.4"/>
+  </g>
+  <polyline points="160,560 250,480 380,520 470,410 590,450" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.55"/>
+  <g fill="#ffd166">
+    <circle cx="160" cy="560" r="5"/><circle cx="250" cy="480" r="5"/><circle cx="380" cy="520" r="5"/>
+    <circle cx="470" cy="410" r="5"/><circle cx="590" cy="450" r="5"/>
+  </g>
+  <path d="M560 200 L572 228 L600 240 L572 252 L560 280 L548 252 L520 240 L548 228 Z" fill="#ffffff"/>
+</svg>

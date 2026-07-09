@@ -1,9 +1,16 @@
 "use strict";
 /* ============ The Sliding Memory ============
-   To use your own picture: drop it into images/ (square photos look best —
-   anything else gets center-cropped) and change IMAGE_SRC below,
-   e.g. "images/us.jpg".                                                */
-const IMAGE_SRC = "images/placeholder.svg";
+   Each new game uses a random photo from the site's shared library —
+   the PHOTOS list in js/gallery.js, loaded before this script. Add
+   pictures there and the puzzle finds them automatically; any aspect
+   ratio works, photos get center-cropped to a square.                 */
+const FALLBACK_IMAGE = "images/placeholder.svg";
+
+function imagePool(){
+  return (typeof PHOTOS !== "undefined" && Array.isArray(PHOTOS) && PHOTOS.length)
+    ? PHOTOS.map(p => p.src)
+    : [FALLBACK_IMAGE];
+}
 
 /* ---------- pure logic (unit-tested in tests/games.test.js) ----------
    tiles[pos] = which tile sits at board position pos.
@@ -99,6 +106,7 @@ if (typeof document !== "undefined"){
   let tileEls = [];
   let moves = 0, seconds = 0, timer = null, done = false;
   let imageURL = null;
+  let lastSrc = null;
 
   const setTime = () => { timeEl.textContent = formatTime(seconds); };
   const startTimer = () => { if (!timer) timer = setInterval(() => { seconds++; setTime(); }, 1000); };
@@ -175,17 +183,24 @@ if (typeof document !== "undefined"){
 
   function newGame(){
     size = parseInt(sizeSel.value, 10);
-    tiles = shuffledBoard(size);
-    moves = 0; movesEl.textContent = "0";
-    seconds = 0; setTime(); stopTimer();
-    done = false;
-    banner.classList.remove("show");
-    board.classList.remove("done");
-    buildTiles();
+    const pool = imagePool();
+    let src = pool[Math.floor(Math.random() * pool.length)];
+    while (pool.length > 1 && src === lastSrc)
+      src = pool[Math.floor(Math.random() * pool.length)];
+    lastSrc = src;
+    prepareImage(src, () => {
+      tiles = shuffledBoard(size);
+      moves = 0; movesEl.textContent = "0";
+      seconds = 0; setTime(); stopTimer();
+      done = false;
+      banner.classList.remove("show");
+      board.classList.remove("done");
+      buildTiles();
+    });
   }
 
   /* Center-crop the source image to a square via canvas so any photo works. */
-  function prepareImage(onReady){
+  function prepareImage(src, onReady){
     const img = new Image();
     img.onload = () => {
       try {
@@ -196,7 +211,7 @@ if (typeof document !== "undefined"){
         ctx.drawImage(img, (img.naturalWidth - s) / 2, (img.naturalHeight - s) / 2, s, s, 0, 0, 900, 900);
         imageURL = canvas.toDataURL("image/jpeg", 0.92);
       } catch (err) {
-        imageURL = IMAGE_SRC; // canvas blocked (e.g. file://) — use the image as-is
+        imageURL = src; // canvas blocked (e.g. file://) — use the image as-is
       }
       previewImg.src = imageURL;
       onReady();
@@ -206,7 +221,7 @@ if (typeof document !== "undefined"){
       previewImg.src = imageURL;
       onReady();
     };
-    img.src = IMAGE_SRC;
+    img.src = src;
   }
 
   /* If the image is missing entirely, draw a gradient so the game still works. */
@@ -234,7 +249,7 @@ if (typeof document !== "undefined"){
   numsChk.addEventListener("change", () => board.classList.toggle("hide-nums", !numsChk.checked));
   document.addEventListener("keydown", onKey);
 
-  prepareImage(newGame);
+  newGame();
 }
 
 if (typeof module !== "undefined" && module.exports){

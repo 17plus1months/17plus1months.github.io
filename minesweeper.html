@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minesweeper · The Puzzle Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="game-mines">
+<div class="game-wrap">
+
+  <div class="top-line"><a class="back" href="index.html">← All puzzles</a></div>
+
+  <h1 class="game-title">Minesweeper</h1>
+  <p class="game-sub">
+    The usual controls. I understand I'm competing against Google for the privelege to satisfy your minesweeper urges, but surely its convenient to have this here?
+  </p>
+
+  <div id="winBanner" class="win-banner">
+    <div class="big" id="bannerBig">Swept clean! 🎉</div>
+    <div class="sub" id="bannerSub"></div>
+  </div>
+
+  <div class="statbar">
+    <span class="chip">Mines left <b id="mineCount">—</b></span>
+    <span class="chip">Time <b id="time">0:00</b></span>
+  </div>
+
+  <div class="board-wrap">
+    <div id="board" class="mines-board" aria-label="minesweeper board"></div>
+  </div>
+
+  <div class="controls">
+    <select id="sizeSel" aria-label="board size">
+      <option value="9">9 × 9 · easy</option>
+      <option value="12">12 × 12 · medium</option>
+      <option value="16" selected>16 × 16 · hard</option>
+      <option value="20">20 × 20 · expert</option>
+      <option value="24">24 × 24 · extreme</option>
+    </select>
+    <button id="flagBtn" type="button">🚩 Flag mode: off</button>
+    <button id="newBtn" class="primary" type="button">New game</button>
+  </div>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/minesweeper.js"></script>
+</body>
+</html>
