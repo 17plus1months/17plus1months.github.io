@@ -21,7 +21,7 @@ const PHOTOS = [
   {
     src: "images/gallery/first\ drink.JPG",
     title: "The story of BollyWood Ball",
-    note: "Though the event as a whole turned out to be somewhat of a fiasco, this was still our first event after becoming friends. I had a lot of fun waiting in line to get into the event, seeing you down that fireball was hilarous",
+    note: "Though the event as a whole turned out to be somewhat of a fiasco, this was still our first event after becoming friends. I had a lot of fun waiting in line to get into the event, seeing you down that fireball was hilarous. I would like to give a blanket apology for the many times you were elbowed at these events. I hope you aren't too traumatized.",
   },
   {
     src: "images/gallery/don.JPG",
@@ -42,6 +42,11 @@ const PHOTOS = [
     src: "images/gallery/waterfront.jpeg",
     title: "Waterfront",
     note: "Still very early on in our relationship, we decided to revisit the scene of the crime. I was quite lost in your world and failed to notice our own little audience",
+  },
+  {
+    src: "images/gallery/event_pd.jpeg",
+    title: "Diya",
+    note: "This was our first Diya together. Dancing with you to Indian music without having to be worried about others thinking we were weird friends was a welcome relief. I can't wait until we can go to proper clubs.",
   },
   {
     src: "images/gallery/honeymoon\ phase\ eh.JPG",
@@ -86,7 +91,12 @@ const PHOTOS = [
   {
     src: "images/gallery/roped.png",
     title: "Mind Challenge",
-    note: "You seem to have enjoyed this a little too much",
+    note: "You seem to have enjoyed this a little too much. I can't believe I was the only one who had cold water.",
+  },
+  {
+    src: "images/gallery/newyear.JPEG",
+    title: "First party of Senior Year",
+    note: "This picture was taken after the first party of our Senior year, ft Kavya's apartment. This immediatly preceded our first (second) night together.",
   },
   {
     src: "images/gallery/nightOne.JPG",
@@ -99,6 +109,26 @@ const PHOTOS = [
     note: "This dress was stunning. Also featuring the green shirt you picked out (where would I be without it?). With this, we wrapped up the year 2025",
   },
   {
+    src: "images/gallery/jammies.jpeg",
+    title: "Matching matching",
+    note: "First matching clothes photo. Many thanks to your mother for sponsoring this lovely nighttime outfit, I think it really brings out the black in my hair.",
+  },
+  {
+    src: "images/gallery/arepas.jpeg",
+    title: "Arepas",
+    note: "These Arepas were fire. I think we were just plain lucky that there happened to be live music playing while we were eating. I always thought that the idea of a restaurant musician was a little tacky, but I loved the vibes (and the suaces) it brought.",
+  },
+  {
+    src: "images/gallery/party.jpeg",
+    title: "Arbitrary Party",
+    note: "One of the many times I picked you up from one of Swara & friends parties and walked you home. Seeing your smile when I arrived to take you home became indescribably addicting. The debrief after we got home would be the cherry on top.",
+  },
+  {
+    src: "images/gallery/lime.jpeg",
+    title: "Sahana's First Lime Ride!",
+    note: "Congrats on your first lime ride! I know you hate this photo, and will hate me for including this, but this was too cute to not include. You're my sweet silly goose",
+  },
+  {
     src: "images/gallery/oneyear.JPEG",
     title: "One year anniversary",
     note: "I'm so grateful that you still liked to hang around me after a year of dating. (It would have been a little awkard to celebrate 18 months without having dated 12 first). I fall deeper and deeper in love with you every day",
@@ -107,11 +137,6 @@ const PHOTOS = [
     src: "images/gallery/bday.jpg",
     title: "Sahana turns 19!",
     note: "My princess turns 19! Another one of my favorite pictures. You put together such a well-planned and executed event, I don't know how you do it. I'll be forever in your debt for the pink glasses you graciously donated for me to fit with the theme. Maybe its time to invest in a pink shirt.",
-  },
-  {
-    src: "images/gallery/jammies.jpeg",
-    title: "Matching matching",
-    note: "First matching clothes photo. Many thanks to your mother for sponsoring this lovely nighttime outfit, I think it really brings out the black in my hair.",
   },
   {
     src: "images/gallery/meet\ the\ fam.JPG",
