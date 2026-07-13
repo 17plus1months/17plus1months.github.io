@@ -71,7 +71,7 @@ button,select{font:inherit}
 
 /* ---- letter call-to-action on the home page ---- */
 .letter-cta{
-  max-width:1040px;margin:8px auto 0;
+  max-width:1040px;margin:8px auto 20px;
   width:calc(100% - 48px);
   display:flex;align-items:center;gap:16px;
   padding:20px 26px;border-radius:var(--radius);text-decoration:none;
